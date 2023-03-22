@@ -1,0 +1,43 @@
+{
+  "name": "reddit-clone",
+  "version": "1.0.0",
+  "description": "A reddit clone with typescript graphql and postgresql",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev": "nodemon dist/index.js"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadgh222/reddit-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadgh222/reddit-clone/issues"
+  },
+  "homepage": "https://github.com/muhammadgh222/reddit-clone#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.21",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.6.15",
+    "@mikro-orm/core": "^5.6.15",
+    "@mikro-orm/migrations": "^5.6.15",
+    "@mikro-orm/postgresql": "^5.6.15",
+    "pg": "^8.10.0"
+  }
+}
